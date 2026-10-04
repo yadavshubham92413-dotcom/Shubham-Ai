@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SHUBHAM AI</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <div class="brand">SHUBHAM AI</div>
+      <button class="new-btn" id="newChatBtn" aria-label="New chat">＋</button>
+    </header>
+
+    <section class="chat" id="chat">
+      <div class="welcome" id="welcome">
+        <h1>नमस्ते 👋</h1>
+        <p>मैं आपकी क्या सेवा कर सकता हूँ?</p>
+
+        <div class="suggestions">
+          <button>💡 कुछ नया सीखना है</button>
+          <button>✍️ कुछ लिखने में मदद चाहिए</button>
+          <button>🖼️ एक तस्वीर बनानी है</button>
+          <button>🎬 एक वीडियो बनाना है</button>
+        </div>
+      </div>
+    </section>
+
+    <form class="composer" id="composer">
+      <input type="file" id="fileInput" hidden accept="image/*,.pdf,.txt,.md,.csv">
+      <button type="button" class="icon-btn" id="attachBtn" aria-label="Attach">＋</button>
+      <input id="prompt" autocomplete="off" placeholder="Ask Anything">
+      <button type="button" class="icon-btn" id="micBtn" aria-label="Microphone">⌕</button>
+      <button type="submit" class="send-btn" aria-label="Send">➤</button>
+    </form>
+  </main>
+
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <b>SHUBHAM AI</b>
+      <button id="closeMenu">×</button>
+    </div>
+    <button>＋ New chat</button>
+    <h3>FEATURES</h3>
+    <button>ROBLOX SCRIPTING</button>
+    <button>APP DEVELOPMENT</button>
+    <button>CODING</button>
+    <button>STUDY</button>
+    <button>CALCULATOR</button>
+    <button>WRITING</button>
+    <button>WEB SEARCH</button>
+    <button>IMAGE STUDIO</button>
+    <button>VIDEO STUDIO</button>
+    <button>DOCUMENTS</button>
+    <button>DATA ANALYSIS</button>
+    <button>TRANSLATOR</button>
+    <button>MEMORY</button>
+    <button>PROJECTS</button>
+    <button>GALLERY</button>
+    <button>SETTINGS</button>
+
+    <h3>CHAT HISTORY</h3>
+    <div id="history"></div>
+  </aside>
+
+  <script src="/app.js"></script>
+</body>
+</html>

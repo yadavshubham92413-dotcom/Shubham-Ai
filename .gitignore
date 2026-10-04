@@ -1,0 +1,6 @@
+node_modules/
+.env
+public/generated/
+*.log
+
+hf-test.png
